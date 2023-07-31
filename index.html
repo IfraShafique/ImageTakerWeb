@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Taker App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div">
+    <!-- *****Image 1 ******* -->
+    <div id="image1">
+      <img src="./images/6.jpg" alt="" class="w-[100%] mb-4" />
+      <div id="container1"
+        class="w-[34%] h-[30vh] -mt-96 ml-5 z-auto cursor-pointer bg-black opacity-60 rounded-xl 
+        text-center hover:bg-black hover:opacity-90 sm:max-sm:hidden">
+        <h1 class="text-white text-3xl mb-6 pt-5">
+          Take photos with our app
+        </h1>
+        <div class="w-[92%] h-0.5 bg-white ml-5 opacity-30"></div>
+        <p class="text-white py-2">
+          Super simple installment: free of charge
+        </p>
+        <button class="text-white bg-green-700 rounded py-2 px-48 md:max-md:px-20 md:max-md:py-1  hover:bg-gray-500 ">
+          Download <span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i
+              class="fa-brands fa-windows"></i></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- *****Image 2 ******* -->
+    <div id="image2 hidden">
+      <img src="./images/7.jpg" alt="" class="w-full hidden mb-4" />
+      <div id="container2"
+        class="w-1/3 h-48 -mt-96 ml-5 z-auto cursor-pointer bg-black opacity-60 rounded-xl text-center hover:bg-black hover:opacity-90 hidden">
+        <h1 class="text-red-600 text-3xl mb-6 pt-5 hidden">
+          <strong>CLICK!</strong> Fast and Easy
+        </h1>
+        <div class="w-11/12 h-0.5 bg-white ml-5 opacity-30"></div>
+        <p class="text-white py-2">Choose from thousands of features</p>
+        <button class="text-white bg-red-600 rounded py-2 px-48 hover:bg-gray-500">
+          Download<span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i class="fa-brands fa-windows"></i></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- *****Image 3 ******* -->
+    <div id="image4 hidden">
+      <img src="./images/11.jpg" alt="" class="w-full hidden" />
+      <div id="container3"
+        class="w-1/3 h-48 -mt-96 ml-5 z-auto cursor-pointer hidden bg-black opacity-60 rounded-xl text-center hover:bg-black hover:opacity-90">
+        <h1 class="text-white text-3xl mb-6 pt-5">Smart Design</h1>
+        <div class="w-11/12 h-0.5 bg-white ml-5 opacity-30"></div>
+        <p class="text-white py-2">Customize photos as you go</p>
+        <button class="text-white bg-indigo-600 rounded py-2 px-48 hover:bg-gray-500">
+          Download<span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i class="fa-brands fa-windows"></i></span>
+        </button>
+      </div>
+    </div>
+    <div class="flex justify-end -mt-36 mr-6">
+      <button class="py-2 px-4 text-white rounded bg-black hover:bg-gray-100 hover:text-black">
+        Take Tour >
+      </button>
+    </div>
+  </div>
+
+  <!-- *********Content************** -->
+  <div class="flex flex-col flex-wrap">
+    <div class="mt-96 ml-6 flex flex-col flex-wrap">
+      <h1 class="text-6xl font-bold mb-8">The App</h1>
+      <h2 class="text-5xl font-semibold mb-8 text-green-600">why buy it?</h2>
+      <p class="w-2/3 mb-7">
+        <span class="text-2xl">Take photos like a pro. </span>You should buy
+        this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+        velit esse cillum dolore eu fugiat nulla pariatur.
+      </p>
+      <div>
+        <button class="py-3 px-9 bg-gray-200 hover:bg-gray-400">
+          <span><i class="fa-solid fa-download"></i></span>&nbsp;Download
+          Application
+        </button>
+      </div>
+
+      <!-- *********Available For****** -->
+      <p class="mt-6 mb-24">
+        Available for
+        <img src="./images/android.png" alt="android" class="inline" />
+        <span><i class="fa-brands fa-apple fa-xl"></i></span>&nbsp;<span>
+          <i class="fa-brands fa-windows fa-xl" style="color: #145bd7"></i></span>
+      </p>
+    </div>
+
+    <div class="flex justify-end -mt-36 mr-6">
+      <div class="w-[19rem] h-[24rem] -mt-[23rem] rounded-xl border-[14px] border-gray-500 absolute">
+        <img src="./images/9.jpg" alt="capture image" class="h-1/2" />
+        <img src="./images/CaptureImg.PNG" alt="" />
+      </div>
+    </div>
+  </div>
+
+  <!-- *********Content 2****** -->
+  <div class="flex bg-gray-100 mt-32">
+    <img src="./images/13.jpg" alt="img12" class="ml-6 w-[21%] h-[28rem] rounded mt-14 mb-14" />
+    <div class="flex flex-col w-[65%] ml-24  font-semibold ">
+      <h1 class="text-7xl mt-14 mb-8">Clarity</h1>
+      <h2 class="text-6xl text-red-500 mb-8">Pixels, who?</h2>
+      <p class="font-normal text-lg">
+        <span class="text-2xl">A revolution in resolution.</span>
+        Sharp and clear photos with the world's best photo engine, incididunt ut
+        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+        exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur.
+      </p>
+    </div>
+  </div>
+
+  <!-- *************Features********** -->
+  <div class="flex justify-around flex-wrap bg-gray-600 flex-col text-white text-lg">
+    <h1 class="text-center text-7xl text-white font-bold my-5">Features</h1>
+    <p class="text-center text-lg text-white">This app is just so lorem ipsum.</p>
+    <ul class=" flex justify-around flex-wrap mt-24 mb-24">
+      <i class="fa-solid fa-bolt fa-2xl text-6xl" style="color: #ff7b00;"></i>
+      <p class="mt-[82px] -ml-[360px] ">Fast</p>
+      <i class="fa-solid fa-heart fa-2xl text-6xl" style="color: #d70f0f;"></i>
+      <p class="mt-[82px] -ml-[380px] ">Loved</p>
+      <i class="fa-solid fa-camera fa-2xl text-6xl" style="color: #b2991f;"></i>
+      <p class="mt-[82px] -ml-[370px] ">Clarity</p>
+      <i class="fa-solid fa-battery-three-quarters fa-2xl text-6xl" style="color: #14c84a;"></i>
+      <p class="mt-[82px] -ml-[380px] ">Power</p>
+
+    </ul>
+
+    <ul class="flex justify-around mb-24 flex-wrap">
+      <i class="fa-regular fa-gem fa-2xl text-6xl" style="color: #ffffff;"></i>
+      <p class="mt-[82px] -ml-[370px] ">Sharp</p>
+      <i class="fa-solid fa-cloud fa-2xl text-6xl" style="color: #0d52c9;"></i>
+      <p class="mt-[82px] -ml-[380px] ">Cloud</p>
+      <i class="fa-solid fa-earth-americas fa-2xl text-6xl" style="color: #eda507;"></i>
+      <p class="mt-[82px] -ml-[370px] ">Global</p>
+      <i class="fa-regular fa-hard-drive fa-2xl text-6xl" style="color: #1864dc;"></i>
+      <p class="mt-[82px] -ml-[380px] ">Storage</p>
+    </ul>
+
+    <ul class="flex justify-around mb-24 flex-wrap">
+      <i class="fa-solid fa-user fa-2xl text-6xl" style="color: #ffffff;"></i>
+      <p class="mt-[82px] -ml-[360px] ">Safe</p>
+      <i class="fa-solid fa-shield-halved fa-2xl text-6xl" style="color: #ff9500;"></i>
+      <p class="mt-[82px] -ml-[380px] ">Stabile</p>
+      <i class="fa-solid fa-wifi fa-2xl text-6xl" style="color: #7e7f81;"></i>
+      <p class="mt-[82px] -ml-[400px] ">Connected</p>
+      <i class="fa-regular fa-image fa-2xl text-6xl" style="color: #ec0449;"></i>
+      <p class="mt-[82px] -ml-[360px] ">HD</p>
+    </ul>
+  </div>
+
+  <!-- *********Pricing********** -->
+  <div class="mb-20">
+    <div class="text-center mt-20">
+      <h1 class="text-5xl font-bold mb-10">Pricing</h1>
+      <p class="text-lg">Choose a pricing plan that fits your needs.</p>
+    </div>
+    <div class="w-[98%] flex flex-wrap justify-around  m-auto ">
+
+      <!-- *******Basic Plan******* -->
+      <div class="text-center hover:shadow-xl">
+        <ul class=" ">
+          <li class="border-2 w-[100%] px-80 py-8 bg-gray-500 text-white text-2xl font-semibold">Basic</li>
+          <li class="border-[1px] w-[100%] px-72 py-5 "><span class="font-bold">250</span> Photos</li>
+          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold">10</span> Features</li>
+          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold">No</span> Ads</li>
+          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> Office hours</span> Support</li>
+          <li class="border-[1px] w-[100%] px-72 py-5 text-3xl text-gray-600">$ 25</li>
+          <div class=" w-[100%] bg-gray-100">
+            <button class="py-3 px-7 my-5 bg-black text-white hover:bg-gray-400">
+              <span><i class="fa-solid fa-download"></i></span>&nbsp;Download
+            </button>
+          </div>
+        </ul>
+      </div>
+
+      <div class="text-center hover:shadow-xl">
+        <!-- *******Premium Plan******* -->
+        <ul>
+          <li class="border-2 w-[100%] px-80 py-8 bg-red-500 text-white text-2xl font-semibold">Premium</li>
+          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> 100</span> Photos</li>
+          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> 50</span> Features</li>
+          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> No</span> Ads</li>
+          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> Endless</span> Support</li>
+          <li class="border-[1px] w-[100%] px-72 py-5 text-3xl text-gray-500">$ 99</li>
+          <div class=" w-[100%] bg-gray-100">
+            <button class="py-3 px-7 my-5 bg-black text-white hover:bg-gray-400">
+              <span><i class="fa-solid fa-download"></i></span>&nbsp;Download
+            </button>
+          </div>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- *******Footer********* -->
+  <footer class="w-[100%] h-[20vh] bg-gray-100 ">
+    <div class="flex justify-center">
+      <ul class="flex  my-12 cursor-pointer">
+        <li><i class="fa-brands fa-square-facebook fa-2xl mr-2" style="color: #000000;"></i></li>
+        <li><i class="fa-brands fa-instagram fa-2xl mr-2" style="color: #000000;"></i></li>
+        <li><i class="fa-brands fa-square-snapchat fa-2xl mr-2" style="color: #000000;"></i></li>
+        <li><i class="fa-brands fa-pinterest-p fa-2xl mr-2" style="color: #000000;"></i></li>
+        <li><i class="fa-brands fa-twitter fa-2xl mr-2" style="color: #000000;"></i></li>
+        <li><i class="fa-brands fa-linkedin-in fa-2xl mr-2" style="color: #000000;"></i></li>
+      </ul>
+    </div>
+  </footer>
+  <script src="index.js" onclick="changeImage()"></script>
+</body>
+
+</html>
