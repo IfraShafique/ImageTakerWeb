@@ -12,70 +12,87 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-  <div">
-    <!-- *****Image 1 ******* -->
-    <div id="image1">
-      <img src="./images/6.jpg" alt="" class="w-[100%] mb-4" />
-      <div id="container1"
-        class="w-[34%] h-[30vh] -mt-96 ml-5 z-auto cursor-pointer bg-black opacity-60 rounded-xl 
-        text-center hover:bg-black hover:opacity-90 sm:max-sm:hidden">
-        <h1 class="text-white text-3xl mb-6 pt-5">
-          Take photos with our app
-        </h1>
-        <div class="w-[92%] h-0.5 bg-white ml-5 opacity-30"></div>
-        <p class="text-white py-2">
-          Super simple installment: free of charge
-        </p>
-        <button class="text-white bg-green-700 rounded py-2 px-48 md:max-md:px-20 md:max-md:py-1  hover:bg-gray-500 ">
-          Download <span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i
-              class="fa-brands fa-windows"></i></span>
-        </button>
-      </div>
+<body class="mt-0 ml-0">
+  <section>
+    <div class="relative">
+        <div class=" bg-gray-200">
+            <ul id="slider">
+                <li class="h-[100vh] relative">
+                    <img src="./images/6.jpg" alt="" class="h-[100vh] object-cover w-[100vw]">
+                    <div id="container1"
+                        class=" w-[34%] h-[30vh] -mt-96 ml-5 z-auto cursor-pointer bg-black opacity-60 rounded-xl 
+                        text-center hover:bg-black hover:opacity-90 max-[1024px]:h-[50vh] max-[1440px]:h-[50vh] max-[768px]:h-[60vh] max-[625px]:hidden">
+                        <h1 class="text-white text-3xl mb-6 pt-5 ">
+                            Take photos with our app
+                        </h1>
+                        <div class="w-[92%] h-0.5 bg-white ml-5 opacity-30"></div>
+                        <p class="text-white py-2">
+                            Super simple installment: free of charge
+                        </p>
+                        <button class="text-white text-center  rounded py-2 px-48 md:max-md:px-20 md:max-md:py-1  hover:bg-gray-500 max-[2560px]:px-40
+                            max-[1024px]:px-20 max-[768px]:px-10 bg-green-700">
+                            Download <span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i
+                                    class="fa-brands fa-windows"></i></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="h-[100vh] relative hidden">
+                    <img src="./images/7.jpg" alt="" class="h-[100vh] object-cover w-[100vw]">
+                    <div id="container2"
+                        class="w-[34%] h-[30vh] -mt-96 ml-5 z-auto cursor-pointer bg-black opacity-60 rounded-xl 
+                    text-center hover:bg-black hover:opacity-90 max-[1024px]:h-[50vh] max-[1440px]:h-[50vh] max-[768px]:h-[60vh] max-[625px]:hidden">
+                        <h1 class="text-red-600 text-3xl mb-6 pt-5 ">
+                            <strong>CLICK!</strong> Fast and Easy
+                        </h1>
+                        <div class="w-11/12 h-0.5 bg-white ml-5 opacity-30"></div>
+                        <p class="text-white py-2">Choose from thousands of features</p>
+                        <button class="text-white text-center  rounded py-2 px-48 md:max-md:px-20 md:max-md:py-1  hover:bg-gray-500 max-[2560px]:px-40
+                    max-[1024px]:px-20 max-[768px]:px-10 bg-red-600">
+                            Download<span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i
+                                    class="fa-brands fa-windows"></i></span>
+                        </button>
+                    </div>
+                </li>
+                <li class="h-[100vh] relative hidden">
+                    <img src="./images/11.jpg" alt="" class="h-[100vh] object-cover w-[100vw]">
+                    <div id="container3"
+                        class="w-[34%] h-[30vh] -mt-96 ml-5 z-auto cursor-pointer bg-black opacity-60 rounded-xl 
+                    text-center hover:bg-black hover:opacity-90 max-[1024px]:h-[50vh] max-[1440px]:h-[50vh] max-[768px]:h-[60vh] max-[625px]:hidden">
+                        <h1 class="text-white text-3xl mb-6 pt-5">Smart Design</h1>
+                        <div class="w-11/12 h-0.5 bg-white ml-5 opacity-30"></div>
+                        <p class="text-white py-2">Customize photos as you go</p>
+                        <button class="text-white text-center  rounded py-2 px-48 md:max-md:px-20 md:max-md:py-1  hover:bg-gray-500 max-[2560px]:px-40
+                    max-[1024px]:px-20 max-[768px]:px-10 bg-indigo-600">
+                            Download<span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i
+                                    class="fa-brands fa-windows"></i></span>
+                        </button>
+                    </div>
+        </div>
+        </li>
+        </ul>
     </div>
+    <div class="absolute px-5 flex h-[6vh] w-full top-0 left-0 ">
+        <div class="my-auto w-full flex justify-end">
+            <div
+                class="flex mt-[25%] justify-end-mt-36 mr-6 text-center max-sm:mt-[6rem] max-sm:items-center max-sm:w-[100%] max-[425px]:-mt-[2rem]">
+                <button onclick="next()" class="py-2 px-4 text-white rounded bg-black hover:bg-gray-200
+                     hover:text-black max-sm:w-full max-sm:flex max-sm:mt-[66vh] ">
+                    Take Tour >
+                </button>
+            </div>
+        </div>
 
-    <!-- *****Image 2 ******* -->
-    <div id="image2 hidden">
-      <img src="./images/7.jpg" alt="" class="w-full hidden mb-4" />
-      <div id="container2"
-        class="w-1/3 h-48 -mt-96 ml-5 z-auto cursor-pointer bg-black opacity-60 rounded-xl text-center hover:bg-black hover:opacity-90 hidden">
-        <h1 class="text-red-600 text-3xl mb-6 pt-5 hidden">
-          <strong>CLICK!</strong> Fast and Easy
-        </h1>
-        <div class="w-11/12 h-0.5 bg-white ml-5 opacity-30"></div>
-        <p class="text-white py-2">Choose from thousands of features</p>
-        <button class="text-white bg-red-600 rounded py-2 px-48 hover:bg-gray-500">
-          Download<span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i class="fa-brands fa-windows"></i></span>
-        </button>
-      </div>
-    </div>
 
-    <!-- *****Image 3 ******* -->
-    <div id="image4 hidden">
-      <img src="./images/11.jpg" alt="" class="w-full hidden" />
-      <div id="container3"
-        class="w-1/3 h-48 -mt-96 ml-5 z-auto cursor-pointer hidden bg-black opacity-60 rounded-xl text-center hover:bg-black hover:opacity-90">
-        <h1 class="text-white text-3xl mb-6 pt-5">Smart Design</h1>
-        <div class="w-11/12 h-0.5 bg-white ml-5 opacity-30"></div>
-        <p class="text-white py-2">Customize photos as you go</p>
-        <button class="text-white bg-indigo-600 rounded py-2 px-48 hover:bg-gray-500">
-          Download<span><i class="fa-brands fa-apple"></i></span>&nbsp;<span><i class="fa-brands fa-windows"></i></span>
-        </button>
-      </div>
     </div>
-    <div class="flex justify-end -mt-36 mr-6">
-      <button class="py-2 px-4 text-white rounded bg-black hover:bg-gray-100 hover:text-black">
-        Take Tour >
-      </button>
     </div>
-  </div>
+</section>
 
   <!-- *********Content************** -->
-  <div class="flex flex-col flex-wrap">
-    <div class="mt-96 ml-6 flex flex-col flex-wrap">
+  <div class="flex flex-col  ">
+    <div class="mt-28 ml-6 flex flex-col  w-[66%] ">
       <h1 class="text-6xl font-bold mb-8">The App</h1>
       <h2 class="text-5xl font-semibold mb-8 text-green-600">why buy it?</h2>
-      <p class="w-2/3 mb-7">
+      <p class="w-[100%] mb-7">
         <span class="text-2xl">Take photos like a pro. </span>You should buy
         this app because lorem ipsum consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -99,9 +116,9 @@
       </p>
     </div>
 
-    <div class="flex justify-end -mt-36 mr-6">
-      <div class="w-[19rem] h-[24rem] -mt-[23rem] rounded-xl border-[14px] border-gray-500 absolute">
-        <img src="./images/9.jpg" alt="capture image" class="h-1/2" />
+    <div class="flex justify-end -mt-36 mr-6 max-[768px]:flex-col max-[768px]:mt-[18rem] max-[768px]:ml-[1.3rem] max-[425px]:w-[100%]">
+      <div class="w-[22vw] h-[60vh] -mt-[23rem] rounded-xl border-[14px] border-gray-500 absolute max-[768px]:w-[40%] max-[768px]:h-[90vh] max-[425px]:w-[80%]">
+        <img src="./images/9.jpg" alt="capture image" class="h-1/2 max-[768px]:w-[100%] max-[425px]:w-[100%] " />
         <img src="./images/CaptureImg.PNG" alt="" />
       </div>
     </div>
@@ -109,8 +126,8 @@
 
   <!-- *********Content 2****** -->
   <div class="flex bg-gray-100 mt-32">
-    <img src="./images/13.jpg" alt="img12" class="ml-6 w-[21%] h-[28rem] rounded mt-14 mb-14" />
-    <div class="flex flex-col w-[65%] ml-24  font-semibold ">
+    <img src="./images/13.jpg" alt="img12" class="ml-6 w-[21%] h-[28rem] rounded mt-14 mb-14 max-[768px]:hidden" />
+    <div class="flex flex-col w-[65%] ml-24  font-semibold max-[768px]:w-[80%] max-[768px]:mb-[10%]">
       <h1 class="text-7xl mt-14 mb-8">Clarity</h1>
       <h2 class="text-6xl text-red-500 mb-8">Pixels, who?</h2>
       <p class="font-normal text-lg">
@@ -125,92 +142,91 @@
   </div>
 
   <!-- *************Features********** -->
-  <div class="flex justify-around flex-wrap bg-gray-600 flex-col text-white text-lg">
+  <div class="flex justify-around flex-wrap bg-gray-600 flex-col text-white text-lg w-[100%]">
     <h1 class="text-center text-7xl text-white font-bold my-5">Features</h1>
     <p class="text-center text-lg text-white">This app is just so lorem ipsum.</p>
-    <ul class=" flex justify-around flex-wrap mt-24 mb-24">
-      <i class="fa-solid fa-bolt fa-2xl text-6xl" style="color: #ff7b00;"></i>
-      <p class="mt-[82px] -ml-[360px] ">Fast</p>
-      <i class="fa-solid fa-heart fa-2xl text-6xl" style="color: #d70f0f;"></i>
-      <p class="mt-[82px] -ml-[380px] ">Loved</p>
-      <i class="fa-solid fa-camera fa-2xl text-6xl" style="color: #b2991f;"></i>
-      <p class="mt-[82px] -ml-[370px] ">Clarity</p>
-      <i class="fa-solid fa-battery-three-quarters fa-2xl text-6xl" style="color: #14c84a;"></i>
-      <p class="mt-[82px] -ml-[380px] ">Power</p>
+    <ul class=" flex justify-around flex-wrap mt-24 mb-[10%]">
+      <i class="fa-solid fa-bolt fa-2xl text-6xl max-[768px]:text-4xl" style="color: #ff7b00;"></i>
+      <p class="mt-[6%] -ml-[25%] max-sm:mb-[10%]">Fast</p>
+      <i class="fa-solid fa-heart fa-2xl text-6xl max-[768px]:text-4xl" style="color: #d70f0f;"></i>
+      <p class="mt-[6%] -ml-[25%] max-sm:mb-[10%]">Loved</p>
+      <i class="fa-solid fa-camera fa-2xl text-6xl max-[768px]:text-4xl" style="color: #b2991f;"></i>
+      <p class="mt-[6%] -ml-[25%] max-sm:mb-[10%]">Clarity</p>
+      <i class="fa-solid fa-battery-three-quarters fa-2xl text-6xl max-[768px]:text-4xl" style="color: #14c84a;"></i>
+      <p class="mt-[6%] -ml-[25%] max-sm:mb-[10%]">Power</p>
 
     </ul>
 
-    <ul class="flex justify-around mb-24 flex-wrap">
-      <i class="fa-regular fa-gem fa-2xl text-6xl" style="color: #ffffff;"></i>
-      <p class="mt-[82px] -ml-[370px] ">Sharp</p>
-      <i class="fa-solid fa-cloud fa-2xl text-6xl" style="color: #0d52c9;"></i>
-      <p class="mt-[82px] -ml-[380px] ">Cloud</p>
-      <i class="fa-solid fa-earth-americas fa-2xl text-6xl" style="color: #eda507;"></i>
-      <p class="mt-[82px] -ml-[370px] ">Global</p>
-      <i class="fa-regular fa-hard-drive fa-2xl text-6xl" style="color: #1864dc;"></i>
-      <p class="mt-[82px] -ml-[380px] ">Storage</p>
+    <ul class="flex justify-around mb-[10%] flex-wrap">
+      <i class="fa-regular fa-gem fa-2xl text-6xl max-[768px]:text-4xl" style="color: #ffffff;"></i>
+      <p class="mt-[6%] -ml-[25%] max-sm:mb-[10%] ">Sharp</p>
+      <i class="fa-solid fa-cloud fa-2xl text-6xl max-[768px]:text-4xl" style="color: #0d52c9;"></i>
+      <p class="mt-[6%] -ml-[25%] max-sm:mb-[10%] ">Cloud</p>
+      <i class="fa-solid fa-earth-americas fa-2xl text-6xl max-[768px]:text-4xl" style="color: #eda507;"></i>
+      <p class="mt-[6%] -ml-[25%]  max-sm:mb-[10%]">Global</p>
+      <i class="fa-regular fa-hard-drive fa-2xl text-6xl max-[768px]:text-4xl" style="color: #1864dc;"></i>
+      <p class="mt-[6%] -ml-[25%]  max-sm:mb-[10%]">Storage</p>
     </ul>
 
-    <ul class="flex justify-around mb-24 flex-wrap">
-      <i class="fa-solid fa-user fa-2xl text-6xl" style="color: #ffffff;"></i>
-      <p class="mt-[82px] -ml-[360px] ">Safe</p>
-      <i class="fa-solid fa-shield-halved fa-2xl text-6xl" style="color: #ff9500;"></i>
-      <p class="mt-[82px] -ml-[380px] ">Stabile</p>
-      <i class="fa-solid fa-wifi fa-2xl text-6xl" style="color: #7e7f81;"></i>
-      <p class="mt-[82px] -ml-[400px] ">Connected</p>
-      <i class="fa-regular fa-image fa-2xl text-6xl" style="color: #ec0449;"></i>
-      <p class="mt-[82px] -ml-[360px] ">HD</p>
+    <ul class="flex justify-around mb-[10%] flex-wrap">
+      <i class="fa-solid fa-user fa-2xl text-6xl max-[768px]:text-4xl" style="color: #ffffff;"></i>
+      <p class="mt-[6%] -ml-[24%]  max-sm:mb-[10%]">Safe</p>
+      <i class="fa-solid fa-shield-halved fa-2xl text-6xl max-[768px]:text-4xl" style="color: #ff9500;"></i>
+      <p class="mt-[6%] -ml-[25%]  max-sm:mb-[10%]">Stabile</p>
+      <i class="fa-solid fa-wifi fa-2xl text-6xl max-[768px]:text-4xl" style="color: #7e7f81;"></i>
+      <p class="mt-[6%] -ml-[26%]  max-sm:mb-[10%]">Connected</p>
+      <i class="fa-regular fa-image fa-2xl text-6xl max-[768px]:text-4xl" style="color: #ec0449;"></i>
+      <p class="mt-[6%] -ml-[25%]  max-sm:mb-[10%]">HD</p>
     </ul>
   </div>
 
-  <!-- *********Pricing********** -->
-  <div class="mb-20">
-    <div class="text-center mt-20">
+ <!-- *********Pricing********** -->
+ <div class="mb-20 text-center ">
+  <div class="text-center mt-20">
       <h1 class="text-5xl font-bold mb-10">Pricing</h1>
-      <p class="text-lg">Choose a pricing plan that fits your needs.</p>
-    </div>
-    <div class="w-[98%] flex flex-wrap justify-around  m-auto ">
-
-      <!-- *******Basic Plan******* -->
-      <div class="text-center hover:shadow-xl">
-        <ul class=" ">
-          <li class="border-2 w-[100%] px-80 py-8 bg-gray-500 text-white text-2xl font-semibold">Basic</li>
-          <li class="border-[1px] w-[100%] px-72 py-5 "><span class="font-bold">250</span> Photos</li>
-          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold">10</span> Features</li>
-          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold">No</span> Ads</li>
-          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> Office hours</span> Support</li>
-          <li class="border-[1px] w-[100%] px-72 py-5 text-3xl text-gray-600">$ 25</li>
-          <div class=" w-[100%] bg-gray-100">
-            <button class="py-3 px-7 my-5 bg-black text-white hover:bg-gray-400">
-              <span><i class="fa-solid fa-download"></i></span>&nbsp;Download
-            </button>
-          </div>
-        </ul>
-      </div>
-
-      <div class="text-center hover:shadow-xl">
-        <!-- *******Premium Plan******* -->
-        <ul>
-          <li class="border-2 w-[100%] px-80 py-8 bg-red-500 text-white text-2xl font-semibold">Premium</li>
-          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> 100</span> Photos</li>
-          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> 50</span> Features</li>
-          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> No</span> Ads</li>
-          <li class="border-[1px] w-[100%] px-72 py-5"><span class="font-bold"> Endless</span> Support</li>
-          <li class="border-[1px] w-[100%] px-72 py-5 text-3xl text-gray-500">$ 99</li>
-          <div class=" w-[100%] bg-gray-100">
-            <button class="py-3 px-7 my-5 bg-black text-white hover:bg-gray-400">
-              <span><i class="fa-solid fa-download"></i></span>&nbsp;Download
-            </button>
-          </div>
-        </ul>
-      </div>
-    </div>
+      <p class="text-lg mb-7">Choose a pricing plan that fits your needs.</p>
   </div>
+  <div class="w-full flex flex-wrap justify-around">
+      <!-- *******Basic Plan******* -->
+      <div class="hover:shadow-xl max-w-[1024px] mt-10 w-[90%] md:w-[45%]">
+          <ul>
+              <li class="border-2 w-full px-6 py-8 bg-gray-500 text-white text-2xl font-semibold text-center">Basic</li>
+              <li class="border-[1px] w-full px-6 py-5"><span class="font-bold">250</span> Photos</li>
+              <li class="border-[1px] w-full px-6 py-5"><span class="font-bold">10</span> Features</li>
+              <li class="border-[1px] w-full px-6 py-5"><span class="font-bold">No</span> Ads</li>
+              <li class="border-[1px] w-full px-6 py-5"><span class="font-bold">Office hours</span> Support</li>
+              <li class="border-[1px] w-full px-6 py-5 text-3xl text-gray-600">$ 25</li>
+              <div class="w-full bg-gray-100 px-6">
+                  <button class="py-3 px-7 my-5 bg-black text-white hover:bg-gray-400">
+                      <span><i class="fa-solid fa-download"></i></span>&nbsp;Download
+                  </button>
+              </div>
+          </ul>
+      </div>
+  
+      <!-- *******Premium Plan******* -->
+      <div class="hover:shadow-xl max-w-[1024px] mt-10 w-[90%] md:w-[45%]">
+          <ul>
+              <li class="border-2 w-full px-6 py-8 bg-red-500 text-white text-2xl font-semibold text-center">Premium</li>
+              <li class="border-[1px] w-full px-6 py-5"><span class="font-bold">100</span> Photos</li>
+              <li class="border-[1px] w-full px-6 py-5"><span class="font-bold">50</span> Features</li>
+              <li class="border-[1px] w-full px-6 py-5"><span class="font-bold">No</span> Ads</li>
+              <li class="border-[1px] w-full px-6 py-5"><span class="font-bold">Endless</span> Support</li>
+              <li class="border-[1px] w-full px-6 py-5 text-3xl text-gray-500">$ 99</li>
+              <div class="w-full bg-gray-100 px-6">
+                  <button class="py-3 px-7 my-5 bg-black text-white hover:bg-gray-400">
+                      <span><i class="fa-solid fa-download"></i></span>&nbsp;Download
+                  </button>
+              </div>
+          </ul>
+      </div>
+  </div>
+</div>
 
   <!-- *******Footer********* -->
-  <footer class="w-[100%] h-[20vh] bg-gray-100 ">
+  <footer class="w-[100%] h-[21vh] bg-gray-100 ">
     <div class="flex justify-center">
-      <ul class="flex  my-12 cursor-pointer">
+      <ul class="flex  my-[5%] cursor-pointer">
         <li><i class="fa-brands fa-square-facebook fa-2xl mr-2" style="color: #000000;"></i></li>
         <li><i class="fa-brands fa-instagram fa-2xl mr-2" style="color: #000000;"></i></li>
         <li><i class="fa-brands fa-square-snapchat fa-2xl mr-2" style="color: #000000;"></i></li>
