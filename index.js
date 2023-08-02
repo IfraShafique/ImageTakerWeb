@@ -1,20 +1,26 @@
-let currentImageIndex = 1;
+let currentSlideID = 1;
+    const sliderElement = document.getElementById('slider');
+    const totalSlides = sliderElement.childElementCount;
 
-const changeImage = () => {
-    const totalImages = 3;
-    const nextImageIndex = (currentImageIndex % totalImages) + 1;
-    
-    const currentImage = document.getElementById(`image${currentImageIndex}`);
-    const currentContainer = document.getElementById(`container${currentImageIndex}`);
-    const nextImage = document.getElementById(`image${nextImageIndex}`);
-    const nextContainer = document.getElementById(`container${nextImageIndex}`);
-    
-    currentImage.style.display = "none";
-    currentContainer.style.display = "none";
-    nextImage.style.display = "block";
-    nextContainer.style.display = "block";
-    
-    currentImageIndex = nextImageIndex;
-};
+    function next() {
+      currentSlideID++;
+      if (currentSlideID > totalSlides) {
+        currentSlideID = 1;
+      }
+      showSlide();
+    }
 
+    function showSlide() {
+      const slides = sliderElement.getElementsByTagName('li');
+      for (let i = 0; i < totalSlides; i++) {
+        const element = slides[i];
+        if (currentSlideID === i + 1) {
+          element.classList.remove('hidden');
+        } else {
+          element.classList.add('hidden');
+        }
+      }
+    }
 
+    // Show the first slide initially
+    showSlide();
